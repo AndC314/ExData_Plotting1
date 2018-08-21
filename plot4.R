@@ -43,3 +43,6 @@ with(df5, {
   with(df5, points(DateTime,Sub_metering_3,type='l', col='blue'))
   plot(DateTime, Global_reactive_power, type='l')
 })
+
+dev.copy(png,"plot4.png", width=480, height=480)
+dev.off

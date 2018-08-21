@@ -37,3 +37,6 @@ hist(df4$GlobalActivePower,
      col="red",
      xlim=c(0,6),
      las=1)
+
+dev.copy(png,"plot1.png", width=480, height=480)
+dev.off

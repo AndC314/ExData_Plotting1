@@ -33,3 +33,7 @@ df3$Global_active_power <- as.numeric(df3$Global_active_power)
 df4 <- mutate(df3, GlobalActivePower = Global_active_power/1000)
 df5 <- mutate(df4, DateTime = dmy_hms(DateTime))
 with(df5, plot(DateTime, Global_active_power, type='l', ylab='Global Active Power (kilowatts)'))
+
+
+dev.copy(png,"plot2.png", width=480, height=480)
+dev.off
